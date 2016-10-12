@@ -21,6 +21,11 @@ a {
 #socialLink:active {
     color: solid black;
 }
+
+.linkIcon{
+    max-width: 50%
+}
+
 #vio {
     background-image: url("../img/vio_background.png");
     background-size:20%;

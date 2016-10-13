@@ -31,6 +31,16 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--Instafeed Script-->
+    <script src="js/instafeed.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get:"tagged",
+            tagName: "govio",
+            clientId: "6723d562ef03441aa298ee3a3298afb5"
+        });
+        feed.run();
+    </script>
 
 </head>
 
@@ -126,6 +136,7 @@
             <div class="call-to-action">
                 <h2>Instagram foto's</h2>
                 <hr class="primary">
+                <div id="instafeed"></div>
             </div>
         </div>
     </aside>

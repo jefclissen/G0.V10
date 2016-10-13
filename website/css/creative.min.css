@@ -22,8 +22,8 @@ a {
     color: solid black;
 }
 
-.linkIcon{
-    max-width: 50%
+.icoSize{
+    max-width: 45%
 }
 
 #vio {
@@ -31,6 +31,7 @@ a {
     background-size:20%;
     background-repeat: repeat;
 }
+
 header,
 header .header-content {
     position: relative;

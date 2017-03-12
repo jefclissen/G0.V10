@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
 
@@ -23,6 +23,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
+    <link href="css/collapse-toggle.css" rel="stylesheet">
     <link href="css/creative.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,16 +32,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    
     <!--Instafeed Script-->
     <script src="js/instafeed.js" type="text/javascript"></script>
     <script type="text/javascript">
-        var feed = new Instafeed({
-            get: "tagged",
-            tagName: "govio",
-            clientId: "6723d562ef03441aa298ee3a3298afb5"
+        var userFeed = new Instafeed({
+            get: 'user',
+            userId: '1828794699',
+            clientId: '	08a365775afa4cf789f307ef5aba02cd',
+            accessToken: '1828794699.08a3657.203d54c418294bac81ddd34fc5379409',
+            resolution: 'thumbnail',
+            
+            template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+            sortBy: 'most-recent',
+            limit: 20,
+            links: false
         });
-        feed.run();
-
+        
+        userFeed.run();
     </script>
 
 </head>
@@ -73,7 +83,10 @@
                         <a class="page-scroll" href="#fotos">Foto's</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#social">Connected</a>
+                        <a class="page-scroll" href="#social">Social Media</a>
+                    </li>
+                    <li>
+                        <a href="Ondernemen.html">Ondernemen</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -101,10 +114,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
+                    <h2 class="section-heading">Over Govio</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                    <p class="text-faded">Jeugdhuis Govio is in de eerste plaats een ontmoetingsplaats voor jongeren. Vanaf het jaar dat je 16 wordt, kan je in het café binnenspringen voor een babbeltje of om iets te drinken. Wat je ook gelooft of hoe je er ook uitziet, iedereen is welkom. Het zijn de jongeren zelf die het jeugdhuis draaiende houden. Het zijn zij die bepalen wat er gebeurt. Iedereen die wil, kan meehelpen in het jeugdhuis. Je kan pinten komen tappen, meehelpen op een fuif, plaatjes komen draaien of een potje mee komen voetballen. Voor iedereen is er wel een werkgroep waar hij zijn ei kwijt kan. Je kan er ook iets leren. Er zijn regelmatig tap- en DJ-cursussen. Je leert er samenwerken en verantwoordelijk zijn voor iets. We zijn steeds op zoek naar nieuwe leden en projecten. Heb je dus zin om mee te helpen aan de bestaande werking of heb je een eigen idee waarvoor je nog wat ondersteuning kan gebruiken? </p>
+                    
+                    <a class="btn btn-default btn-xl sr-button info" data-toggle="collapse" data-target="#moreinfoabout"></a>
+                    <div id="moreinfoabout" class="collapse">
+                        <p class="text-faded">Ondernemerschap binnen Govio; sinds 2014 werkt het jeugdhuis ook aan een bovenlokaal project rond ondernemerschap ondersteund door Vlaanderen. In 2014 startten we de werkgroep VIO op binnen het jeugdhuis die zich voornamelijk focust op het uitbouwen van een grafisch bureau met vrijwillige jongeren, die dit project als mini-onderneming managen. Daarnaast richtten we ook mee de Haven coöperatie op, die ondernemende jongeren een structuur en coaching aanbiedt om hun eigen idee verder uit te bouwen. Interesse in de ondernemingstrajecten van het jeugdhuis? Contacteer ons ***of ga naar ondernemen***</p>
+                        <a href="Ondernemen.html" class="btn btn-default btn-xl sr-button">Ondernemen Govio</a>
+                    </div>
+                    <a href="#contact" class="page-scroll btn btn-default btn-xl sr-button">Contacteer ons</a>
                 </div>
             </div>
         </div>
@@ -119,13 +138,13 @@
                 <div class="col-lg-6 col-md-6 text-center">
                     <h3>Café</h3>
                     <img class="sr-icons" style="max-width: 100%" src="img/fotos/cafe_govio.jpg">
-                    <h4>info over café</h4>
+                    <h4>Onze ontmoetingsruimte (instuif) is geopend op woensdag en in het weekend. Dit wordt volledig gedragen door onze gemotiveerde vrijwilligers. Naast gewone café-avonden vinden er ook vaak activiteiten plaats. </h4>
                     <a href="#services" class="page-scroll btn btn-primary btn-xl sr-button" style="margin-bottom: 15px">Contacteer ons!</a>
                 </div>
                 <div class="col-lg-6 col-md-6 text-center">
                     <h3>Zaal</h3>
                     <img class="sr-icons" style="max-width: 100%" src="img/fotos/zaal_govio.jpg">
-                    <h4>info over zaal huren</h4>
+                    <h4>De meeste activiteiten vinden plaats in de zaal; het gaat dan vooral over fuiven en optredens. We stellen de zaal ook ter beschikking van (jeugd)verenigingen om feestjes in te organiseren. We beschikken over een deftige licht, geluid –en tapinstallatie. Interesse om de zaal te huren?</br> Contacteer ons via info@govio.be</h4>
                     <a href="#services" class="page-scroll btn btn-primary btn-xl sr-button">Zaal huren?</a>
                 </div>
             </div>
@@ -150,7 +169,9 @@
             <div class="call-to-action">
                 <h2>Instagram foto's</h2>
                 <hr class="primary">
-                <div id="instafeed"></div>
+                <div id="instafeed">
+                    
+                </div>
             </div>
         </div>
     </aside>
@@ -159,7 +180,7 @@
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-18 col-sm-18">
-                    <iframe src="https://snapwidget.com/embed/267656" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:500px"></iframe>
+                    
                 </div>
                 <div class="text-center">
                     <h2>Foto's</h2>
@@ -227,16 +248,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <h2 class="section-heading">Contacteer ons!</h2>
+                    <p>INSERT CONTACT INFO TEXTJ</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>+32 3 666 22 24</p>
+                    <p><a href="tel:+32 3 666 22 24">+32 3 666 22 24</a></p><p></p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">info@govio.be</a></p>
+                    <p><a href="mailto:info@govio.be">info@govio.be</a></p>
                 </div>
             </div>
         </div>

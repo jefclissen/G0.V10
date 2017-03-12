@@ -1,0 +1,8 @@
+a.btn.info.collapsed:before
+{
+    content:'Meer info' ;
+}
+a.btn.info:before
+{
+    content:'minder info' ;
+}

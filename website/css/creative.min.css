@@ -29,7 +29,7 @@ a {
         max-width: 25%
     }
 }
-@media(min-width: 768px) and (max-width: 992px){
+@media(min-width: 768px) and (max-width: 991px){
     .icoSize{
         max-width: 30%
     }
@@ -68,7 +68,7 @@ html {
     width: 100%
 }
 body {
-    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     webkit-tap-highlight-color: #222
 }
 .btn,
